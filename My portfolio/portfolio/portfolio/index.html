@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Logo font: Playfair Display for an elegant, distinctive logo style -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <!-- Hero name font: Montserrat for bold display and good legibility -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">Portfolio</div>
+        <!-- hamburger button shown on small screens -->
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+            <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-links">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><button id="theme-toggle" class="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </button></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm <span class="highlight">Vinay</span></h1>
+            <!-- Rotating subtitle START - this element will be updated by JavaScript to show multiple roles automatically -->
+            <p class="subtitle"><span id="subtitle" aria-live="polite">Frontend Developer</span><span class="cursor" aria-hidden="true"></span></p>
+            <!-- Rotating subtitle END -->
+            <div class="cta-buttons">
+                <a href="#projects" class="btn primary">View My Work</a>
+                <a href="#contact" class="btn secondary">Contact Me</a>
+                <!-- Download CV button START - place your CV in 'assets/Vinay_CV.pdf' or update the href to your CV path -->
+                <a href="https://1drv.ms/f/c/2172ea7baece033e/IgDOUhZV257IQL15agoMs5vyAVawKrQqOo5kssgFpIO0r5o?e=bPBtAK" class="btn download" download title="Download Vinay's CV"><i class="fas fa-download" aria-hidden="true"></i> Download CV</a>
+                <!-- Download CV button END -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p><i>I am a passionate frontend developer with expertise in creating beautiful and functional websites. I love turning complex problems into simple, beautiful, and intuitive solutions.</i></p>
+                <p><i>When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or enjoying outdoor activities.</i></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- college details section  -->
+     <section id="education" class="education">
+        <h2>Education</h2>
+        <div class="education-content">
+            <div class="education-text">
+        <p><i>I am a Computer Science and Engineering diploma student currently in my 6th (final) semester at DPG Polytechnic College, Gurugram, with an academic duration of 2023–2026. I have built a solid foundation in core computer science concepts, programming, and practical technical skills through both academic learning and hands-on work.</i></p>
+        <p><i>I completed my 10th standard from Hermann Gmeiner School, Faridabad, and my 12th standard through NIOS (National Institute of Open Schooling), which helped me develop self-learning ability, discipline, and adaptability.</i></p>
+        <p><i>I am eager to apply my technical knowledge in real-world environments, continuously improve my skills, and grow as a professional in the field of computer science and technology.</i></p>
+            </div>
+        </div>
+     </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2>My Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <i class="fab fa-html5"></i>
+                <h3>HTML5</h3>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-css3-alt"></i>
+                <h3>CSS3</h3>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-js"></i>
+                <h3>JavaScript</h3>
+            </div>
+            
+            <div class="skill-card">
+                <i class="fab fa-git-alt" aria-hidden="true"></i>
+                <i class="fab fa-github" aria-hidden="true"></i>
+                <h3>Git & GitHub</h3>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+        <div class="projects-grid">
+            <!-- project - 1 -->
+              <div class="project-card">
+                <img src="rps.png" alt="RPS Game">
+                <div class="project-info">
+                    <h3>RPS Game</h3>
+                    <p>A classic Rock Paper Scissors game built with HTML, CSS, and JavaScript, featuring interactive gameplay and score tracking.</p>
+                    <div class="project-links">
+                        <a href="file:///C:/Users/vinay/OneDrive/Desktop/My%20projects/rock%20paper%20game/index.html" class="btn small">View Demo</a>
+                        <a href="https://github.com/vinaybhadana123/portfolio.git" class="btn small">Source Code</a>
+                    </div>
+                </div>
+            </div>
+            <!-- project - 2 -->
+            <div class="project-card">
+                <img src="hover-button.png" alt="Hover Button">
+                <div class="project-info">
+                    <h3>Hover Button</h3>
+                    <p>An interactive button component with various hover effects and animations using HTML/CSS</p>
+                    <div class="project-links">
+                        <a href="file:///C:/Users/vinay/OneDrive/Desktop/My%20projects/cube%20animation/cube.html" class="btn small">View Demo</a>
+                        <a href="https://github.com/vinaybhadana123/projects.git" class="btn small">Source Code</a>
+                    </div>
+                </div>
+            </div>
+            <!-- project - 3 -->
+            <div class="project-card">
+                <img src="bg-color.png" alt="Background Color Generator">
+                <div class="project-info">
+                    <h3>Background Color Generator</h3>
+                    <p>A tool that generates random background colors with hex codes and allows users to copy and save their favorite colors HTML/CSS/ and J/script.</p>
+                    <div class="project-links">
+                        <a href="file:///C:/Users/vinay/OneDrive/Desktop/My%20projects/color-gen/color.html" class="btn small">View Demo</a>
+                        <a href="https://github.com/vinaybhadana123/projects.git" class="btn small">Source Code</a>
+                    </div>
+                </div>
+            </div>
+            <!-- project - 4 -->
+            <div class="project-card">
+                <img src="algotrick.png" alt="C-Website">
+                <div class="project-info">
+                    <h3>COMP-Website</h3>
+                    <p>A full-featured ALgo-trick website with listings, Corprate site Features. HTML/CSS/Js</p>
+                    <div class="project-links">
+                        <a href="C:\Users\vinay\OneDrive\Desktop\algotrick clone\index.html" class="btn small">View Demo</a>
+                        <a href="" class="btn small">Source Code</a>
+                    </div>
+                </div>
+            </div>
+            <!-- project - 5 -->
+            <div class="project-card">
+                <img src="log-page-sign-page-log-sign-web-design-register-page-info-page-log-page-design_891938-83.avif" alt="Amazon Clone">
+                <div class="project-info">
+                    <h3>Sign-in Page</h3>
+                    <p>A site login page which is created by using HTML & CSS.</p>
+                    <div class="project-links">
+                        <a href="file:///C:/Users/vinay/OneDrive/Desktop/My%20projects/page/login.html" class="btn small">View Demo</a>
+                        <a href="https://github.com/vinaybhadana123/projects/tree/main/page" class="btn small">Source Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Upcoming project - 7 -->
+            <div class="project-card add-project">
+                <div class="project-info">
+                    <h3>Add New Project</h3>
+                    <p>Space for your next amazing project!</p>
+                    <div class="project-links">
+                        <a href="#" class="btn small">Coming Soon</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Get In Touch</h2>
+        <div class="contact-content">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>vinayx2345@gmail.com</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <p>+91 7827081243</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Gurugram</p>
+                </div>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/vinaybhadana123" class="social-icon"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/%20vinay-engineering-student-89519b300" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/?utm_source=pwa_homescreen&__pwa=1" class="social-icon"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chatbot Widget -->
+    <button id="open-chat" class="chat-button" aria-label="Open chat">
+        <i class="fas fa-comment" aria-hidden="true"></i>
+    </button>
+
+    <div id="chat-container" class="chat-container hidden" aria-live="polite" aria-label="Chat window">
+        <div class="chat-header">
+            <span id="chat-title">Chat Mode</span>
+            <button id="mode-toggle-chat" class="mode-toggle-btn" aria-label="Toggle chat/bot mode">Switch to Bot Mode</button>
+            <button id="close-chat" class="close-chat-btn" aria-label="Close chat">&times;</button>
+        </div>
+        <div id="chat-messages" class="chat-messages"></div>
+        <form id="chat-form" class="chat-form">
+            <input type="text" id="chat-input" placeholder="Say something..." autocomplete="off" required />
+            <button type="submit" aria-label="Send message"><i class="fas fa-paper-plane" aria-hidden="true"></i></button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Vinay. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
